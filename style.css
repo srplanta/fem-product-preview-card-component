@@ -104,10 +104,15 @@ main{
     background-color: var(--dark-cyan);
     border: 0;
     padding: 1rem;
-    border-radius: .5rem;
+    border-radius: .7rem;
     font-family: montserrat;
     font-weight: 700;
     letter-spacing: .1rem;
+}
+.button-add-to-card:hover {
+    background-color: var(--very-dark-cyan);
+    transition-duration: 300ms;
+    box-shadow: 0 0 .4em var(--dark-cyan);
 }
 .attribution{
     text-align: center;
