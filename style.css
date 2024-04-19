@@ -83,7 +83,7 @@ main{
     width: 50%;
     font-family: fraunces;
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: var(--dark-cyan);
     word-spacing: 2rem;
 }
