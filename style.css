@@ -21,6 +21,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* justify-content:space-evenly; */
     background-color: var(--cream);
 }
 
@@ -29,12 +30,13 @@ p {
 }
 
 /* ------------------------ */
-main{
+main {
     /* display: flex;
     flex-direction: column; */
     width: 90%;
     /* margin: auto; */
 }
+
 .card-container {
     display: flex;
     flex-direction: column;
@@ -44,11 +46,12 @@ main{
     overflow: hidden;
 }
 
-.product-image {
+.card-header {
     width: 100%;
+    content: url(./images/image-product-mobile.jpg);
 }
 
-.card-header {
+.product-image {
     width: 100%;
 }
 
@@ -109,15 +112,39 @@ main{
     font-weight: 700;
     letter-spacing: .1rem;
 }
+
 .button-add-to-card:hover {
     background-color: var(--very-dark-cyan);
     transition-duration: 300ms;
     box-shadow: 0 0 .4em var(--dark-cyan);
 }
-.attribution{
+
+.attribution {
     text-align: center;
     width: 80%;
     font-family: montserrat;
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+/* ------------------------------ */
+
+@media only screen and (min-width:768px) {
+    main {
+        width: 40%;
+    }
+
+    .card-container {
+        flex-direction: row;
+    }
+
+    .card-header {
+        width: 50%;
+        content: url(./images/image-product-desktop.jpg);
+    }
+
+    .card-body {
+        width: 50%;
+        padding: 1rem;
+    }
 }
